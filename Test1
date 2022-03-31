@@ -1,0 +1,56 @@
+nail = float(0)
+#menu
+def menu():
+    print("[0] Exit")
+    print("[1] Nail")
+    print("[2] Monday")
+    print("[3] Tuesday")
+    print("[4] Wednesday")
+    print("[5] Thursday")
+    print("[6] Friday")
+    print("[7] Saturday")   
+    print("[8] Sunday")
+menu()
+option = float(input("Enter your option:"))
+
+while option != 0:
+    if option == 1:
+        #Nail
+        print(nail)
+    elif option == 2:
+        #Monday
+        nail = nail - 7
+        print(nail)
+    elif option == 3:
+        #Tuesday
+        nail = nail * 3
+        print(nail)
+    elif option == 4:
+        #Wednesday
+        nail = nail / 2
+        print(nail)
+    elif option == 5:
+        #Thursday
+        nail = nail + 10
+        print(nail)
+    elif option == 6:
+        #Friday
+        nail = nail + (2 * 3)
+        print(nail)
+    elif option == 7:
+        #saturday
+        nail = nail + 6
+        print(nail)
+    elif option == 8:
+        #Sunday
+        nail = nail + 7
+        print(nail)
+    else:
+        print("Invalid option.")
+        
+    print()
+    menu()
+    option = float(input("Enter your option:"))
+        
+print("Thank you for using this program, Goodbye.")
+           
